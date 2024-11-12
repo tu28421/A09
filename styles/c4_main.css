@@ -1,7 +1,9 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
-    width: 800px;  
+    font-size: 16px;
+    line-height: 1.6;
+    width: 100%;
+    max-width: 800px;
     margin: 0 auto;
     border: 3px solid #931420;
     background-color: #fffded;
@@ -24,11 +26,17 @@ header h2, header h3 {
     padding: 0;
 }
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0;
+}
+
 section {
-    width: 525px;  
-    float: right;   
-    padding: 20px;  
-    margin-left: 30px; 
+    flex: 1;
+    max-width: 525px;
+    padding: 20px;
 }
 
 section h2 {
@@ -41,11 +49,12 @@ section h2 {
 }
 
 aside {
-    width: 215px; 
-    float: right;  
-    padding-left: 20px; 
-    padding-bottom: 20px; 
+    flex: 1;
+    max-width: 215px;
+    padding-left: 20px;
+    padding-bottom: 20px;
     margin-left: 30px;
+}
 
 aside h2 {
     border: 3px double #931420;
@@ -56,21 +65,11 @@ aside h2 {
     background-color: #f9f9f9;
 }
 
-main {
-    padding: 0; 
-}
-
-h1 {
-    font-size: 150%; 
-    padding-top: 0.5em;  
-    padding-bottom: 0.25em; 
-    margin: 0;  
-
 footer {
     background-color: #931420;
     padding: 10px 0;
     text-align: center;
-    clear: both; 
+    clear: both;
 }
 
 footer p {
@@ -78,15 +77,14 @@ footer p {
     margin: 0;
 }
 
-
 blockquote {
     font-style: italic;
 }
 
 article img {
-    float: right;  
-    margin-top: 1em;  
-    margin-bottom: 1em; 
-    margin-left: 1.5em; 
-    border: 1px solid black; 
+    float: right;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1.5em;
+    border: 1px solid black;
 }

@@ -60,10 +60,10 @@ article img {
 }
 
 #nav_menu {
-    background-color: #931420;  
+    background-color: #931420; 
     padding: 10px 0;
     text-align: center; 
-}
+    position: relative; 
 
 #nav_menu ul {
     list-style-type: none;  
@@ -74,6 +74,7 @@ article img {
 #nav_menu ul li {
     float: left;            
     margin-right: 20px;     
+    position: relative;     
 
 #nav_menu ul li a {
     display: block;         
@@ -84,16 +85,41 @@ article img {
     background-color: #800000; 
     color: white;           
     font-weight: bold;      
+}
 
 #nav_menu ul li a:hover {
     background-color: #f6bb73;  
 }
 
 #nav_menu ul li a.current {
-    color: yellow;        
+    color: yellow;         
 }
 
-    margin-bottom: 1em;
-    margin-left: 1.5em;
-    border: 1px solid black;
+/* Submenu Styles */
+#nav_menu ul li ul {
+    display: none;            
+    position: absolute;       
+    top: 100%;                
+    left: 0;                  
+    background-color: #931420; 
+    padding: 0;
+    list-style-type: none;    
+}
+
+#nav_menu ul li:hover > ul {
+    display: block;          
+}
+
+#nav_menu ul li ul li {
+    float: none;              
+    padding: 10px;            
+}
+
+#nav_menu ul li ul li a {
+    padding: 0.5em 1em;      
+    background-color: #800000; 
+    text-align: left;         
+
+ul {
+    list-style-type: circle;  
 }
